@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nerd Calculator</title>
+  <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container centered-container text-center">
+    <div class="form-wrapper">
+      <h1 id="mainTitle" class="title">Nerd Calculator 🧠</h1>
+
+      <div id="credits" class="alert alert-danger alert-dismissible fade show text" role="alert">
+        Desenvolvido por <strong>joe_mts</strong>. Clique para acessar o projeto no GitHub.</div>
+      <h1 id="resultTitle" class="mb-4 d-none title">Resultado Final 🏆</h1>
+      <form id="quizForm" class="p-4 bg-light text-dark" style="border: 1px solid #ccc; border-radius: 8px;"></form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast align-items-center text-bg-success border-0 p-2">
+    <div class="d-flex">
+      <div class="toast-body text">
+        Imagem gerada com sucesso! 🚀
+      </div>
+    </div>
+  </div>
+
+  <div id="imageResult" class="p-4 bg-light text-dark"
+    style="position: absolute; left: -9999px; top: 0; max-width:600px; border: 1px solid #ccc; border-radius: 8px;">
+  </div>
+
+  <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./js/html2canvas/html2canvas.min.js"></script>
+  <script src="./js/quizData.js"></script>
+  <script src="./js/quizUI.js"></script>
+  <script src="./js/quizLogic.js"></script>
+  <script src="./js/imageGenerator.js"></script>
+</body>
+
+</html>
